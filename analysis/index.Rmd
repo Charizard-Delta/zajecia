@@ -9,3 +9,5 @@ editor_options:
 ---
 
 it's quite shrimple
+
+[CV tutaj](cv_plz.html)
