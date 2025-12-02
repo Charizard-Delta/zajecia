@@ -256,10 +256,10 @@ $(document).ready(function () {
   <a href="index.html">Home</a>
 </li>
 <li>
-  <a href="about.html">CV</a>
+  <a href="cv_template.html">CV</a>
 </li>
 <li>
-  <a href="cv_template.html">License</a>
+  <a href="license.html">License</a>
 </li>
 <li>
   <a href="palmer_penguins_cwiczenia.html">Pingwiny</a>
@@ -284,7 +284,7 @@ $(document).ready(function () {
 <p>
 <button type="button" class="btn btn-default btn-workflowr btn-workflowr-report" data-toggle="collapse" data-target="#workflowr-report">
 <span class="glyphicon glyphicon-list" aria-hidden="true"></span>
-workflowr <span class="glyphicon glyphicon-ok text-success"
+workflowr <span class="glyphicon glyphicon-exclamation-sign text-danger"
 aria-hidden="true"></span>
 </button>
 </p>
@@ -295,8 +295,8 @@ aria-hidden="true"></span>
 </li>
 <li>
 <a data-toggle="tab" href="#checks"> Checks <span
-class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span>
-</a>
+class="glyphicon glyphicon-exclamation-sign text-danger"
+aria-hidden="true"></span> </a>
 </li>
 <li>
 <a data-toggle="tab" href="#versions">Past versions</a>
@@ -309,9 +309,9 @@ class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span>
 </p>
 <p>
 <strong>Checks:</strong> <span
-class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> 2
+class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> 1
 <span class="glyphicon glyphicon-exclamation-sign text-danger"
-aria-hidden="true"></span> 0
+aria-hidden="true"></span> 1
 </p>
 <p>
 <strong>Knit directory:</strong> <code>zajecia/</code> <span
@@ -334,33 +334,36 @@ versions</em> tab lists the development history.
 <div class="panel panel-default">
 <div class="panel-heading">
 <p class="panel-title">
-<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRMarkdownfilestronguptodate">
-<span class="glyphicon glyphicon-ok text-success"
-aria-hidden="true"></span> <strong>R Markdown file:</strong> up-to-date
-</a>
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRMarkdownfilestronguncommittedchanges">
+<span class="glyphicon glyphicon-exclamation-sign text-danger"
+aria-hidden="true"></span> <strong>R Markdown file:</strong> uncommitted
+changes </a>
 </p>
 </div>
-<div id="strongRMarkdownfilestronguptodate"
+<div id="strongRMarkdownfilestronguncommittedchanges"
 class="panel-collapse collapse">
 <div class="panel-body">
-<p>Great! Since the R Markdown file has been committed to the Git
-repository, you know the exact version of the code that produced these
-results.</p>
+<p>The R Markdown file has unstaged changes. To know which version of
+the R Markdown file created these results, you’ll want to first commit
+it to the Git repo. If you’re still working on the analysis, you can
+ignore this warning. When you’re finished, you can run
+<code>wflow_publish</code> to commit the R Markdown file and build the
+HTML.</p>
 </div>
 </div>
 </div>
 <div class="panel panel-default">
 <div class="panel-heading">
 <p class="panel-title">
-<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcomCharizardDeltazajeciatree5b447a32ebc07accf5405fdb0df741a51fa2ec97targetblank5b447a3a">
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcomCharizardDeltazajeciatreee83b7e41506b507a290f63fc04fe4696a732d02dtargetblanke83b7e4a">
 <span class="glyphicon glyphicon-ok text-success"
 aria-hidden="true"></span> <strong>Repository version:</strong>
-<a href="https://github.com/Charizard-Delta/zajecia/tree/5b447a32ebc07accf5405fdb0df741a51fa2ec97" target="_blank">5b447a3</a>
+<a href="https://github.com/Charizard-Delta/zajecia/tree/e83b7e41506b507a290f63fc04fe4696a732d02d" target="_blank">e83b7e4</a>
 </a>
 </p>
 </div>
 <div
-id="strongRepositoryversionstrongahrefhttpsgithubcomCharizardDeltazajeciatree5b447a32ebc07accf5405fdb0df741a51fa2ec97targetblank5b447a3a"
+id="strongRepositoryversionstrongahrefhttpsgithubcomCharizardDeltazajeciatreee83b7e41506b507a290f63fc04fe4696a732d02dtargetblanke83b7e4a"
 class="panel-collapse collapse">
 <div class="panel-body">
 <p>
@@ -370,7 +373,7 @@ reproducibility.
 </p>
 <p>
 The results in this page were generated with repository version
-<a href="https://github.com/Charizard-Delta/zajecia/tree/5b447a32ebc07accf5405fdb0df741a51fa2ec97" target="_blank">5b447a3</a>.
+<a href="https://github.com/Charizard-Delta/zajecia/tree/e83b7e41506b507a290f63fc04fe4696a732d02d" target="_blank">e83b7e4</a>.
 See the <em>Past versions</em> tab to see a history of the changes made
 to the R Markdown and HTML files.
 </p>
@@ -394,6 +397,7 @@ Untracked files:
 
 Unstaged changes:
     Modified:   analysis/_site.yml
+    Modified:   analysis/index.Rmd
 
 </code></pre>
 <p>
@@ -438,6 +442,23 @@ Message
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>
+html
+</td>
+<td>
+<a href="https://rawcdn.githack.com/Charizard-Delta/zajecia/e83b7e41506b507a290f63fc04fe4696a732d02d/docs/index.html" target="_blank">e83b7e4</a>
+</td>
+<td>
+Charizard-Delta
+</td>
+<td>
+2025-12-02
+</td>
+<td>
+Build site.
+</td>
+</tr>
 <tr>
 <td>
 Rmd
@@ -598,7 +619,7 @@ Start workflowr project.
 </div>
 </div>
 </div>
-<p>it’s quite shrimple</p>
+<p>it’s quite shrimple, actually</p>
 
 
 <!-- Adjust MathJax settings so that all math formulae are shown using
